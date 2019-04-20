@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="icon" type= "image/png" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/mine.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- <script>
+     function checkForm(){
+      var lastnombre = document.getElementById('lastname').value;
+      var nom_err = document.getElementById('lastNameError').value;
+      if (lastnombre == '') {
+         return .errorMsg.firstNameError;}
+    </script> -->
+
+  </head>
+
+
+  <body>
+	<a href = "#content" class = "skip">Skip to Content</a>
+
+  <main id ="content">
+
+<header>
+  <nav>
+  <ul>
+    <li>
+      <a href = "intro.html">Introduction</a>
+      <a href = "context.html">Context</a>
+      <a href = "theoutsiders.html">The Outsiders</a>
+      <a href = "thepresent.html">The Present</a>
+      <a href = "contact.html" class = "current">Contact</a>
+    </li>
+  </ul>
+  </nav>
+
+
+</header>
+
+    <form onsubmit="return checkForm()">
+        <fieldset>
+          <legend>Personal details</legend>
+            <label for = "firstname">First Name:</label>
+            <input type="text" id = "firstname" name="first name" placeholder="First Name">
+            <p class="errorMsg" id="firstNameError">Please enter your name above!</p>
+<br>
+            <label for = "lastname">Last Name:</label>
+            <input type="text" id = "lastname" name="last name" placeholder="Last name">
+            <p class="errorMsg" id="lastNameError">Please enter your name above!</p>
+
+<br>
+            <label for = "email">Email:</label>
+            <input type="text" id="email" name="email" placeholder= "Your email">
+<br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Leave your comments and suggestions here..." style="width:400px"></textarea>
+<br>
+            <input type="submit" value = "Submit">
+        </fieldset>
+    </form>
+
+<div class="callout">
+  <div class="callout-header">Callout Header</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <div class="callout-container">
+    <p>Thanks for stopping by. Keep in Touch!</p>
+  </div>
+</div>
+
+
+</main>
+
+   <footer>
+     <small>&copy; Rochelle Campbell</small>
+   </footer>
+
+  </body>
+
+</html>

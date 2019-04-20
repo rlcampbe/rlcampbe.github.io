@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Outsiders</title>
+    <link rel="icon" type= "image/png" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/mine.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!--
+<script>
+click(function(){
+	$("#Slider").append($("#Slider img:first-of-type"));
+});
+
+$("#Prev").click(function(){
+	$("#Slider").prepend($("#Slider img:last-of-type"));
+});
+</script> -->
+
+</head>
+
+<body>
+
+	<a href = "#content" class = "skip">Skip to Content</a>
+
+<header>
+
+  <nav>
+  <ul>
+    <li>
+      <a href = "intro.html">Introduction</a>
+      <a href = "context.html">Context</a>
+      <a href = "theoutsiders.html" class = "current">The Outsiders</a>
+      <a href = "thepresent.html">The Present</a>
+      <a href = "contact.html">Contact</a>
+      </a>
+    </li>
+  </ul>
+  </nav>
+</header>
+
+	<main id ="content">
+    <h1>Inside but Outside</h1>
+    <p>Not all African American artists during this period were apart of the Black Arts Movement. Those artists that created abstract works were often shunned because their work was not deemed political.</p>
+
+<!--row stuff  -->
+<div class="row">
+  <div class="column">
+    <img src= "images/outsiders/pindell.jpg" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Howardena Pindell">
+  </div>
+
+  <div class="column">
+    <img src= "images/outsiders/pindell2.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Howardena Pindell">
+  </div>
+
+  <div class="column">
+    <img src= "images/outsiders/pindell4.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Howardena Pindell">
+  </div>
+
+  <div class="column">
+    <img src= "images/outsiders/lewis.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Norman Lewis">
+  </div>
+
+  <div class="column">
+    <img src= "images/outsiders/lewis2.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Norman Lewis">
+  </div>
+
+
+  <div class="column">
+  <img src= "images/outsiders/bearden3.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Romare Bearden">
+  </div>
+
+  <div class="column">
+    <img src= "images/outsiders/gilliam.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Sam Gilliam">
+  </div>
+
+  <div class="column">
+    <img src= "images/outsiders/gilliam2.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Sam Gilliam">
+  </div>
+
+
+<!--the modal stuff-->
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="images/outsiders/pindell.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="images/outsiders/pindell2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="images/outsiders/pindell4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="images/outsiders/lewis.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="images/outsiders/lewis2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="images/outsiders/bearden3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="images/outsiders/gilliam.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="images/outsiders/gilliam2.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+<!--caption things  -->
+ <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+<div class="column">
+      <img class="demo" src="images/outsiders/pindell.jpg" style="width:30%" onclick="currentSlide(1)" alt="Howardena Pindell">
+    </div>
+
+<div class="column">
+      <img class="demo" src="images/outsiders/pindell2.jpg" style="width:30%" onclick="currentSlide(2)" alt="Howardena Pindell">
+    </div>
+
+<div class="column">
+      <img class="demo" src="images/outsiders/pindell4.jpg" style="width:30%" onclick="currentSlide(3)" alt="Howardena Pindell">
+    </div>
+
+<div class="column">
+      <img class="demo" src="images/outsiders/lewis.jpg" style="width:30%" onclick="currentSlide(4)" alt="Norman Lewis">
+    </div>
+
+<div class="column">
+      <img class="demo" src="images/outsiders/lewis2.jpg" style="width:30%" onclick="currentSlide(5)" alt="Norman Lewis">
+    </div>
+
+<div class="column">
+      <img class="demo" src="images/outsiders/bearden3.jpg" style="width:30%" onclick="currentSlide(6)" alt="Romare Bearden">
+    </div>
+
+<div class="column">
+      <img class="demo" src="images/outsiders/gilliam.jpg" style="width:30%" onclick="currentSlide(7)" alt="Sam Gilliam">
+    </div>
+
+<div class="column">
+      <img class="demo" src="images/outsiders/gilliam2.jpg" style="width:30%" onclick="currentSlide(8)" alt="Sam Gilliam">
+    </div>
+
+		</div>
+		<div id="Arrows">
+			<i id="Prev" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+			<i id="Next" class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+		</div>
+		<h2>Click the arrows to progress the slideshow</h2>
+	</div>
+</section>
+
+</div>
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+  </main>
+
+
+
+<footer>
+  <small>&copy; Rochelle Campbell</small>
+</footer>
+
+</body>
+
+
+</html>
